@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <person Ref="2" type="DataTableSource" isKey="true">
+        <Alias>person</Alias>
+        <Columns isList="true" count="7">
+          <value>Name,System.String</value>
+          <value>Family,System.String</value>
+          <value>QRCode,System.Byte[]</value>
+          <value>NationalCode,System.String</value>
+          <value>CourseName,System.String</value>
+          <value>Point,System.Int32</value>
+          <value>Date,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>94172af603dd4645a97cf63f8441e03c</Key>
+        <Name>person</Name>
+        <NameInSource>person</NameInSource>
+      </person>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>79590e74fee14c9a898f06161a5b81f8</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <Image1 Ref="4" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.2,1.6,4.2,3.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <DataColumn>person.QRCode</DataColumn>
+          <Margins>0,0,0,0</Margins>
+          <Name>Image1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Image1>
+        <Dataperson Ref="5" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.2,10.92,0.3</ClientRectangle>
+          <Components isList="true" count="6">
+            <Dataperson_Name Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Dataperson_Name</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{person.Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Dataperson_Name>
+            <Dataperson_Family Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.8,0,1.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Dataperson_Family</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{person.Family}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Dataperson_Family>
+            <Dataperson_NationalCode Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,0,1.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Dataperson_NationalCode</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{person.NationalCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Dataperson_NationalCode>
+            <Dataperson_CourseName Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.4,0,1.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Dataperson_CourseName</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{person.CourseName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Dataperson_CourseName>
+            <Dataperson_Point Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.2,0,1.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Dataperson_Point</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{person.Point}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Dataperson_Point>
+            <Dataperson_Date Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9,0,1.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Dataperson_Date</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{person.Date}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Dataperson_Date>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>person</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>Dataperson</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </Dataperson>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>2fed7133497042718c7a1d65c477552a</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>8.3</PageHeight>
+      <PageWidth>11.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>1/23/2022 12:59:06 PM</ReportChanged>
+  <ReportCreated>10/3/2021 3:36:06 PM</ReportCreated>
+  <ReportFile>E:\dev\web\bitbucket\AvalAmooz\Web-Backend\AvalAmooz\AvalAmooz\wwwroot\Reports\test.mrt</ReportFile>
+  <ReportGuid>158573520c15487eafa172fe1ef48832</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2020.2.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
