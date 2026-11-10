@@ -1,0 +1,10 @@
+/logs/
+*.log
+/app_offline.htm
+/appsettings*.json
+!/appsettings.example.json
+/.env
+/.env.*
+/*.pfx
+/*.p12
+/*.zip
